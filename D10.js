@@ -238,14 +238,7 @@ const object = {
   gender: "male",
 };
 const deleteProp = function (obj, str) {
-  const objarr = Object.keys(object);
-  for (let i = 0; i < objarr.length; i++) {
-    const element = objarr[i];
-    if (element === str) {
-      let newobj = objarr.splice(i, 1);
-    }
-  }
-  return objarr;
+  delete obj[str];
 };
 console.log(deleteProp(object, "surname"));
 
