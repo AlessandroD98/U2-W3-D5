@@ -510,3 +510,8 @@ const movies = [
   },
 ];
 // console.log(movies);
+const onlyTheYears = function () {
+  const onlyYears = movies.map((movies) => movies.Year);
+  console.log(onlyYears);
+};
+onlyTheYears();
