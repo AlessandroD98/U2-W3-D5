@@ -145,7 +145,9 @@ console.log(onlyLetters("I have 4 dogs"));
 */
 console.log("-----------ESERCIZIO 6-----------");
 
-const isThisAnEmail = function (str) {};
+const isThisAnEmail = function (email) {
+  return email.includes("@") && (email.includes(".it") || email.includes(".com"));
+};
 console.log(isThisAnEmail("nome.cognome@gmail.com"));
 
 /* ESERCIZIO 7
@@ -172,7 +174,10 @@ console.log("Today is", whatDayIsIt());
       values: [3, 3, 4]
   }
 */
+console.log("-----------ESERCIZIO 8-----------");
 
+const rollTheDices = function (num) {};
+rollTheDices(2);
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
