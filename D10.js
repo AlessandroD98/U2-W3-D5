@@ -176,8 +176,20 @@ console.log("Today is", whatDayIsIt());
 */
 console.log("-----------ESERCIZIO 8-----------");
 
-const rollTheDices = function (num) {};
+const rollTheDices = function (num) {
+  const result = {
+    sum: 0,
+    values: [],
+  };
+  for (let i = 0; i < num; i++) {
+    let dado = dice();
+    result.sum += dado;
+    result.values.push(dado);
+  }
+  return result;
+};
 rollTheDices(2);
+
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
