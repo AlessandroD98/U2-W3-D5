@@ -260,6 +260,21 @@ console.log("-----------ESERCIZIO 15-----------");
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
 */
+console.log("-----------ESERCIZIO 16-----------");
+
+// const sumAllTheYears = function () {
+//   const newarr = [];
+//   for (let i = 0; i < movies.length; i++) {
+//     const element = parseInt(movies[i].Year);
+//     newarr.push(element);
+//   }
+//   // console.log(newarr);
+//   const startvalue = 0;
+//   const sumYears = newarr.reduce((acc, cur) => acc + cur, 0);
+//   return sumYears;
+// };
+
+// console.log(sumAllTheYears());
 
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
@@ -495,16 +510,3 @@ const movies = [
   },
 ];
 // console.log(movies);
-const sumAllTheYears = function () {
-  const newarr = [];
-  for (let i = 0; i < movies.length; i++) {
-    const element = parseInt(movies[i].Year);
-    newarr.push(element);
-  }
-  // console.log(newarr);
-  const startvalue = 0;
-  const sumYears = newarr.reduce((acc, cur) => acc + cur, 0);
-  return sumYears;
-};
-
-console.log(sumAllTheYears());
